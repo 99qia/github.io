@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>canvas+原生js实现立体式文字变换特效</title>
+    <style>
+        * {margin:0;padding:0;}
+        body {background:#000;}
+    </style>
 </head>
-
 <body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!中文！</p>
-  <p>这是我学的第一个Git网页</p>
-
+    <canvas id="canvas" style="position:absolute; top:0; left:0;"></canvas>
+    <div id="buffer" style="display:none;"></div>
+    <script src="font_change.js"></script>
 </body>
 </html>
